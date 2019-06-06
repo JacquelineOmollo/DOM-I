@@ -55,3 +55,24 @@ navheader[2].textContent = "Vision";
 navheader[3].textContent = "Features";
 navheader[4].textContent = "About";
 navheader[5].textContent = "Contact";
+
+/*let title = document.querySelector(".cta-text");
+console.log(title.textContent);
+title.textContent = "DOM Is Awesome";
+console.log(title.textContent);*/
+
+let btn = document.querySelector("button");
+console.log(btn.textContent);
+btn.textContent = "Get Started";
+console.log(btn.textContent);
+
+let topImage = document.querySelector("#cta-img");
+topImage.src = "img/header-img.png";
+
+const topText = document.querySelector("h4");
+topText.textContent = "Features";
+topText.textContent = "About";
+console.log(topText);
+
+let middleImage = document.querySelector(".middle-img");
+middleImage.src = "img/mid-page-accent.jpg";
