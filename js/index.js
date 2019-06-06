@@ -56,7 +56,9 @@ navheader[3].textContent = "Features";
 navheader[4].textContent = "About";
 navheader[5].textContent = "Contact";
 
-//navheader.appendChild()
+for (let i = 0; i < navheader.length; ++i) {
+  navheader[i].style.color = "green";
+}
 ///navheader.style.color = "green";
 
 let title = document.querySelector("h1");
