@@ -56,10 +56,10 @@ navheader[3].textContent = "Features";
 navheader[4].textContent = "About";
 navheader[5].textContent = "Contact";
 
-/*let title = document.querySelector(".cta-text");
+let title = document.querySelector("h1");
 console.log(title.textContent);
 title.textContent = "DOM Is Awesome";
-console.log(title.textContent);*/
+console.log(title.textContent);
 
 let btn = document.querySelector("button");
 console.log(btn.textContent);
@@ -69,10 +69,14 @@ console.log(btn.textContent);
 let topImage = document.querySelector("#cta-img");
 topImage.src = "img/header-img.png";
 
-const topText = document.querySelector("h4");
-topText.textContent = "Features";
-topText.textContent = "About";
+const topText = document.querySelector("main-content");
+
 console.log(topText);
 
 let middleImage = document.querySelector(".middle-img");
 middleImage.src = "img/mid-page-accent.jpg";
+
+S;
+
+let foot = document.querySelector("footer");
+foot.textContent = "Copyright Great Idea! 2018";
