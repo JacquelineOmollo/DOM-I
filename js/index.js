@@ -96,5 +96,15 @@ mainText[4].querySelector("p").textContent =
 let middleImage = document.querySelector(".middle-img");
 middleImage.src = "img/mid-page-accent.jpg";
 
+const lookMeUp = document.querySelector(".contact");
+lookMeUp.getElementsByTagName("h4")[0].textContent =
+  siteContent["contact"]["contact-h4"];
+lookMeUp.getElementsByTagName("p")[0].textContent =
+  siteContent["contact"]["address"];
+lookMeUp.getElementsByTagName("p")[1].textContent =
+  siteContent["contact"]["phone"];
+lookMeUp.getElementsByTagName("p")[2].textContent =
+  siteContent["contact"]["email"];
+
 let foot = document.querySelector("footer");
 foot.textContent = "Copyright Great Idea! 2018";
