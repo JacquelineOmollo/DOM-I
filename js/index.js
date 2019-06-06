@@ -58,7 +58,7 @@ navheader[5].textContent = "Contact";
 
 let title = document.querySelector("h1");
 console.log(title.textContent);
-title.textContent = "DOM Is Awesome";
+title.innerText = "DOM Is Awesome";
 console.log(title.textContent);
 
 let btn = document.querySelector("button");
@@ -69,14 +69,32 @@ console.log(btn.textContent);
 let topImage = document.querySelector("#cta-img");
 topImage.src = "img/header-img.png";
 
-const topText = document.querySelector("main-content");
+const mainText = document.querySelectorAll(".text-content");
+console.log(mainText);
 
-console.log(topText);
+mainText[0].querySelector("h4").textContent =
+  siteContent["main-content"]["features-h4"];
+mainText[0].querySelector("p").textContent =
+  siteContent["main-content"]["features-content"];
+mainText[1].querySelector("h4").textContent =
+  siteContent["main-content"]["about-h4"];
+mainText[1].querySelector("p").textContent =
+  siteContent["main-content"]["about-content"];
+mainText[2].querySelector("h4").textContent =
+  siteContent["main-content"]["services-h4"];
+mainText[2].querySelector("p").textContent =
+  siteContent["main-content"]["services-content"];
+mainText[3].querySelector("h4").textContent =
+  siteContent["main-content"]["product-h4"];
+mainText[3].querySelector("p").textContent =
+  siteContent["main-content"]["product-content"];
+mainText[4].querySelector("h4").textContent =
+  siteContent["main-content"]["vision-h4"];
+mainText[4].querySelector("p").textContent =
+  siteContent["main-content"]["vision-content"];
 
 let middleImage = document.querySelector(".middle-img");
 middleImage.src = "img/mid-page-accent.jpg";
-
-S;
 
 let foot = document.querySelector("footer");
 foot.textContent = "Copyright Great Idea! 2018";
